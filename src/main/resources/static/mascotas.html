@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html> <!-- xmlns:th="http://www.thymeleaf.org"-->
+<head>
+    <meta charset="UTF-8">
+    <title>Mascotas</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" th:href="style.css">
+</head>
+<body>
+    
+    <div class="logout">
+        <a href="#" class="nav-link dropdown-togglee" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="img/user.png" alt="" class="logoutt" style="width: 40px">
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="login.html">Log out > </a></li>
+        </ul>
+    </div>
+    <div class="container text-center" >
+        <div class="row mt-4">
+            <a href="mascotas.html" class="col col-12 col-md-4 menu">Mascotas</a>
+            <a href="consultas.html" class="col col-12 col-md-4 menu">Consultas</a>
+            <a href="usuarios.html" class="col col-12 col-md-4 menu">usuarios</a>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Agregar Mascota
+                </button>
+            </div>
+            <div class="col-8">
+                <h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Listado de Animales</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Nueva Mascota</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formularioR">
+                            <div class="mb-3">
+                                <label for="tipo" class="form-label">Tipo de Mascota:</label>
+                                <input type="text" class="form-control inputss" id="tipo" placeholder="ejm: Gato,Perro,Tortuga,Conejo ..." required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre de la Mascota:</label>
+                                <input type="text" class="form-control inputss" id="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="edad" class="form-label">Edad de la Mascota:</label>
+                                <input type="text" class="form-control inputss" id="edad"required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="sexo" class="form-label">Sexo de la Mascota:</label>
+                                <select name="select" id="sexo" class="selectsex">
+                                    <option value="undefined">- Seleccione -</option>
+                                    <option value="Macho">Macho</option>
+                                    <option value="Hembra">Hembra</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="imagen" class="form-label">Foto de la Mascota:</label>
+                                <input type="text" class="form-control inputss " id="imagen" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Registrar</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--
+        modal de actualizar los datos
+        -->
+        <div class="modal fade" id="exampleModaldetalle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabelU">Actualizar Mascota</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formularioD">
+                            <div class="mb-3">
+                                <label for="tipoU" class="form-label">Tipo de Mascota:</label>
+                                <input type="text" class="form-control inputss" id="tipoU" placeholder="ejm: Gato,Perro,Tortuga,Conejo ..." required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombreU" class="form-label">Nombre de la Mascota:</label>
+                                <input type="text" class="form-control inputss" id="nombreU" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="edadU" class="form-label">Edad de la Mascota:</label>
+                                <input type="text" class="form-control inputss" id="edadU"required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="sexoU" class="form-label">Sexo de la Mascota:</label>
+                                <select name="select" id="sexoU" class="selectsex">
+                                    <option value="undefined">- Seleccione -</option>
+                                    <option value="Macho">Macho</option>s
+                                    <option value="Hembra">Hembra</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="imagenU" class="form-label">Foto de la Mascota:</label>
+                                <input type="text" class="form-control inputss " id="imagenU" required>
+                            </div>
+                            <input id="idU" name="idU" type="hidden" value="">
+                            <button type="submit" class="btn btn-primary">Registrar</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- modal para los detalles de la mascota -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalD" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabelD">Detalles de Mascota</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modaldetail">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <table class="table text-center " >
+            <thead class="table-dark">
+            <tr>
+                <th scope="col" >ID</th>
+                <th scope="col" >TIPO DE ANIMAL</th>
+                <th scope="col" >NOMBRE</th>
+                <th scope="col" >EDAD</th>
+                <th scope="col" >SEXO</th>
+                <th scope="col" >ACCIONES</th>
+            </tr>
+            </thead>
+            <tbody id="bodyT" class="tbody">
+                <!-- aqui van los datos -->
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <script src="js/mascota.js" type="module"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

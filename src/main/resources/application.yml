@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://root:<password>@veterinaria.9kmqant.mongodb.net/?retryWrites=true&w=majority
+      database : veterinaria

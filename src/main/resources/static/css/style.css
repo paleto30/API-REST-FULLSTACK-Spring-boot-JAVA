@@ -1,0 +1,200 @@
+
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.inputss{
+    text-align: center !important;
+}
+
+.as{
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+
+.navs{
+    text-align: center;
+    background: darkblue;
+}
+
+.navbar-item{
+    display: grid;
+    align-items: center;
+}
+
+.navbar-gen{
+    width: 100%;
+}
+
+.menu{
+    display: grid;
+    text-align: center;
+    text-decoration: none;
+    height: 35px;
+    align-items: center;
+    background-color: #3636a1;
+    color: white;
+    border-radius: 40px;
+}
+.menu:hover{
+    background-color: darkblue;
+    color: white;
+    border-radius: 40px;
+    border: 1px solid white;
+}
+
+.perfil{
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+.user{
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.user:hover{
+    width: 45px;
+    background: #3adbf1;
+    border-radius: 50%;
+}
+
+.img-estatic{
+    margin: 0px;
+}
+.AAA{
+    height: 500px;
+}
+.service{
+    display: flex;
+}
+.cards{
+}
+.card{
+    border: 0px;
+}
+
+.estatic{
+    background-image: url("https://thumbs.dreamstime.com/b/grupo-de-animales-dom%C3%A9sticos-en-blanco-46286889.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+.estatic2{
+    background-image: url("https://thumbs.dreamstime.com/b/variedade-de-animais-de-explora%C3%A7%C3%A3o-agr%C3%ADcola-19571672.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.titulo-static{
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 50px;
+    color: darkblue;
+}
+.form{
+    width: 400px;
+    margin: auto;
+}
+
+.redes{
+    width: 40px;
+}
+.redes:hover{
+    width: 45px;
+}
+
+.logout{
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 30px;
+}
+.logout:hover{
+    background-color: #3adbf1;
+    border-radius: 50%;
+    width: 45px;
+}
+.selectsex{
+    height: 35px;
+    border-radius: 15px;
+}
+
+/*
+estilos para login.html
+*/
+
+
+#bodyLogin{
+    background-image: url("../img/bodyLogin.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.panel{
+    display: flex;
+    width: 400px;
+    height: 500px;
+    background: rgba(0, 0, 139, 0.08);
+    position: relative;
+    margin-top: 5%;
+    margin-left: 8%;
+    border-radius: 20px;
+}
+.panelForm{
+    width: 96%;
+    height: 96%;
+    background: rgba(254, 255, 255, 1.9);
+    margin: auto;
+    border-radius: 13px;
+}
+
+.logoUser{
+    display: flex;
+    width: 120px;
+    height: 110px;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 10%;
+    justify-items: center;
+}
+
+.formul{
+    text-align: center;
+    position: relative;
+    margin-top: 50%;
+ }
+
+.btnLogin{
+    margin-top: 8%;
+}
+
+.inp{
+    text-align: center;
+    width: 80%;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #afafaf;
+
+}
+.regis:hover{
+    font-size: 15px;
+    color: chartreuse;
+}
+
+#bodyLoginR{
+    background-image: url("../img/registro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

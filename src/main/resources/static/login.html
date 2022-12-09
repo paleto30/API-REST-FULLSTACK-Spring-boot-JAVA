@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css" th:href="style.css">
+</head>
+<body id="bodyLogin">
+
+    <div class="regresa" style="display: flex; position: absolute ;margin: -55px 0px 0px 10px" >
+        <a href="index.html" class="btn btn-secondary">
+            <- Home
+        </a>
+    </div>
+
+    <div class="panel" >
+        <div class="panelForm ">
+            <div class="logoUser col-12 col-md-12" >
+                <img src="img/user.png" style="width: 100px; margin: auto">
+            </div>
+            <div class="col-12 col-md-12 formul " >
+                <form  method="post" id="formLog" style=" margin-top: -40% ">
+                    <div class=" username">
+                        <br>
+                        <input class="inp" type="email" placeholder="EMAIL" id="emailLogin" required><br>
+                        <br>
+                        <input class="inp" type="password" placeholder="PASSWORD" id="passLogin" required>
+                        <br>
+                    </div>
+                    <div class="btnLogin">
+                        <button class="btn btn-success" type="submit" id="submitt" name="enviarUser" >log in</button>
+                        <div class="register " style="text-align: center">
+                            <br>
+                            <a href="registro.html" class="regis"  >Registrarse aquí.</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js" type="module"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
